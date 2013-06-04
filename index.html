@@ -99,87 +99,112 @@
 					<h2>¿En dónde queda alojada la llave SSH cuándo se crea?</h2>
 					<p>Por defecto queda en el siguiente directorio: <code>$HOME/.ssh</code> Más específicamente en el archivo llamado <code>id_rsa.pub</code> esa es la llave que tiene que usarse como identificador unico para dar permisos a los usuarios.</p>
 				</section>
-
+				
 				<section>
-					<h2>Respositorios</h2>
-					<p>Hay muchas herramientas en linea que ayudan a la Creación y gestión en general de repositorios, algunas de estas son GitHub y BitBucket.</p>
+
+					<section>
+						<h2>Respositorios</h2>
+						<p>Hay muchas herramientas en linea que ayudan a la Creación y gestión en general de repositorios, algunas de estas son GitHub y BitBucket.</p>
+					</section>
+
+					<section>
+						<h1>Bitbucket o GitHub</h1>
+					</section>
+
+					<section>
+						<h2>GitHub</h2>
+						<p>Está escrito en Ruby, es más popular que BitBucket, pero no es Libre, ademas si se quiere tener repositorios privados tiene que pagarse una cuota mensual.</p>
+					</section>
+
+					<section>
+						<h2>BitBucket</h2>
+						<p>Está escrito en Python y es Libre, éste servicio si permite crear y manterner repositorios privados sin la necesidad de pagar. Aunque tambien tiene planes de pago con más beneficios.</p>
+					</section>
+
+					<section>
+						<h2>Configurar nuestra llave SSH tanto en GitHub como en Bitbucket</h2>
+					</section>
+
+
+					<section>
+						<h2>Crear repositorios en GitHub</h2>
+					</section>
+
+					<section>
+						<h2>Primeros pasos con un repositorio vacío en GitHub</h2>
+						<p>
+							<ul>
+								<li><code>git init</code></li>
+								<li><code>touch README.md</code></li>
+								<li><code>git add README.md</code></li>
+								<li><code>git commit --message="Añadido archivo README.md"</code></li>
+								<li><code>git remote add origin git@github.com:usuario/mi_repo.git</code></li>
+								<li><code>git push -u origin master</code></li>
+							</ul>
+						</p>
+					</section>
+
+					<section>
+						<h2>Crear repositorios en BitBucket</h2>
+					</section>
+
+					<section>
+						<h2>Primeros pasos con un repositorio vacío en BitBucket</h2>
+						<p>
+							<ul>
+								<li><code>git init</code></li>
+								<li><code>touch README.md</code></li>
+								<li><code>git add README.md</code></li>
+								<li><code>git commit --message="Añadido archivo README.md"</code></li>
+								<li><code>git remote add origin ssh://git@bitbucket.org/andresfcardenas/prueba.git</code></li>
+								<li><code>git push -u origin master</code></li>
+							</ul>
+						</p>
+					</section>
+
 				</section>
 
 				<section>
-					<h1>Bitbucket o GitHub</h1>
+					<h2>¿Cómo se trabaja con Git?</h2>
+					<p>Para entender cómo se trabaja con Git hay que hacer de cuenta que se trabaja con una carta, que tiene que introducirse en un sóbre, que se sella y se envía.</p>
 				</section>
 
 				<section>
-					<h2>GitHub</h2>
-					<p>Está escrito en Ruby, es más popular que BitBucket, pero no es Libre, ademas si se quiere tener repositorios privados tiene que pagarse una cuota mensual.</p>
-				</section>
-
-				<section>
-					<h2>BitBucket</h2>
-					<p>Está escrito en Python y es Libre, éste servicio si permite crear y manterner repositorios privados sin la necesidad de pagar. Aunque tambien tiene planes de pago con más beneficios.</p>
-				</section>
-
-				<section>
-					<h2>Configurar nuestra llave SSH tanto en GitHub como en Bitbucket</h2>
-				</section>
-
-				<section>
-					<h2>Crear repositorios en GitHub</h2>
-				</section>
-
-				<section>
-					<h2>Primeros pasos con un repositorio vacío en GitHub</h2>
+					<h2>Comandos usados anteriormente.</h2>
 					<p>
 						<ul>
-							<li><code>touch README.md</code></li>
-							<li><code>git add README.md</code></li>
-							<li><code>git commit --message="Añadido archivo README.md"</code></li>
-							<li><code>git remote add origin git@github.com:usuario/mi_repo.git</code></li>
+							<li><code>git init</code></li>
+							<li><code>git add archivo_en_cuestión</code></li>
+							<li><code>git commit --message="mensaje puntual"</code></li>
+							<li><code>git remote add origin url_del_repositorio.git</code></li>
 							<li><code>git push -u origin master</code></li>
 						</ul>
 					</p>
 				</section>
 
 				<section>
-					<h2>Crear repositorios en BitBucket</h2>
+					<h2><code>git init</code></h2>
+					<p>Con éste comando se inicializa un repositorio, es decir, con este comando le decimos a Git que haga seguimiento de todo lo que hagamos en la carpeta actual.</p>
 				</section>
 
 				<section>
-					<h2>Primeros pasos con un repositorio vacío en BitBucket</h2>
-					<p>
-						<ul>
-							<li><code>touch README.md</code></li>
-							<li><code>git add README.md</code></li>
-							<li><code>git commit --message="Añadido archivo README.md"</code></li>
-							<li><code>git remote add origin ssh://git@bitbucket.org/andresfcardenas/prueba.git</code></li>
-							<li><code>git push -u origin master</code></li>
-						</ul>
-					</p>
+					<h2><code>git add</code></h2>
+					<p>Con éste comando añade archivos modificados, es decir, vendría a ser el comando que añade la carta al sobre, recibe un parametro, este parametro es el path del archivo a añadir.</p>
 				</section>
 
 				<section>
-					<h2></h2>
-					<p></p>
-				</section>
-
-				<section>
-					<h2></h2>
-					<p></p>
-				</section>
-
-				<section>
-					<h2></h2>
-					<p></p>
+					<h2><code>git commit --message=""</code></h2>
+					<p>Con éste comando se sella el sobre con el nombre del usuario, correo y mensaje principal de los cambios hechos.</p>
 				</section>
 				
 				<section>
-					<h2></h2>
-					<p></p>
+					<h2><code>git remote add origin url_del_repositorio.git</code></h2>
+					<p>Este comando solo se usa una vez, solo cuando el repositorio está recién creado, despues de la primera vez que se usa, no es necesario volverlo a utilizar.</p>
 				</section>
 				
 				<section>
-					<h2></h2>
-					<p></p>
+					<h2><code>git push -u origin master</code></h2>
+					<p>Este comando tal y como se pasó anteriormente solo se pasa una vez, despues de la primera vez solo será necesario hacer uso de <code>git push</code> sin parametros.</p>
 				</section>
 				
 				<section>
