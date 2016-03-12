@@ -39,9 +39,10 @@
 
 				<section data-state="alert">
 					<h1>Git</h1>
-					<h3>Una breve introducción a éste CVS</h3>
+					<h3>Una breve introducción</h3>
 					<p>
-						<small>Presentación creada por: <a href="http://about.me/andresfcardenas">Andrés F. Cárdenas.</a></small>
+						<small>Presentación original creada por: <a href="http://about.me/andresfcardenas">Andrés F. Cárdenas.</a></small>
+<small>Modificada por <a href="https://github.com/vacax">Carlos Camacho</a></small>
 					</p>
 				</section>
 
@@ -84,21 +85,11 @@
 					<h3>Establecer el e-mail de nuestro usuario de Git.</h3>
 					<p><code>git config --global user.email tu@email.com</code></p>
 				</section>
-
-				<section data-state="soothe">
-					<h2>Llave SSH</h2>
-					<p>Cuando se trabaja con repositorios, Git hace uso de llaves SSH que usa como identificadores unicos, cada usuario tiene una llave SSH diferente que lo identifica, si la llave SSH especificada está permitida en las configuraciones del repositorio, entonces el usuario que tiene asignada esa llave tiene permisos para hacer cambios en el repositorio sin problemas.</p>
+<section data-state="soothe">
+					<h2>Repositorios Remotos</h2>
+					<p>Los repositorios remotos son versiones de tu proyecto que se encuentran alojados en Internet o en algún punto de la red. Puedes tener varios, cada uno de los cuales puede ser de sólo lectura, o de lectura/escritura, según los permisos que tengas. Colaborar con otros implica gestionar estos repositorios remotos, y mandar (push) y recibir (pull) datos de ellos cuando necesites compartir cosas.<br/> Podemos utilizar los protocolos SSH y HTTPS para gestionar nuestro proyecto bajo Git</p>
 				</section>
-
-				<section data-state="blackout">
-					<h2>¿Cómo generar una llave SSH?</h2>
-					<p>El siguiente comando nos genera una llave rsa por defecto: <code>ssh-keygen</code></p>
-				</section>
-
-				<section data-state="alert">
-					<h2>¿En dónde queda alojada la llave SSH cuándo se crea?</h2>
-					<p>Por defecto queda en el siguiente directorio: <code>$HOME/.ssh</code> Más específicamente en el archivo llamado <code>id_rsa.pub</code> esa es la llave que tiene que usarse como identificador unico para dar permisos a los usuarios.</p>
-				</section>
+				
 				
 				<section>
 
@@ -159,6 +150,13 @@
 								<li><code>git remote add origin ssh://git@bitbucket.org/andresfcardenas/prueba.git</code></li>
 								<li><code>git push -u origin master</code></li>
 							</ul>
+						</p>
+					</section>
+
+<section data-state="blackout">
+						<h2>¿Tengo otras Opciones, fuera de la nube?</h2>
+						<p>
+						 Si, puedes configurar <a href="http://gitblit.com/">Gitblit</a> o <a href = "https://about.gitlab.com/">Gitlab</a> 	
 						</p>
 					</section>
 
